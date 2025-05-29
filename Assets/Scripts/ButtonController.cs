@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +8,7 @@ public class NewBehaviourScript : MonoBehaviour {
     public Sprite defaultImage;
     public Sprite pressedImage;
 
-    public KeyCode keytoPress;
+    public KeyCode keyToPress;
 
     // Start is called before the first frame update
     void Start()
@@ -19,12 +19,12 @@ public class NewBehaviourScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keytoPress))
+        if (Input.GetKeyDown(keyToPress))
         {
             theSR.sprite = pressedImage;
         }
 
-        if (Input.GetKeyUp(keytoPress))
+        if (Input.GetKeyUp(keyToPress))
         {
             theSR.sprite = defaultImage;
         }
