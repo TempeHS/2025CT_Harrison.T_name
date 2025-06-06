@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour {
     public BeatScroller theBS;
 
     public static GameManager instance;
+    public int currentScore;
+    public int scorePerNote = 100;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -37,12 +41,12 @@ public class GameManager : MonoBehaviour {
     public void NoteHit()
     {
         Debug.Log("Hit On Time");
-        
+
+        currentScore += scorePerNote;
     }
 
     public void NoteMissed()
     {
         Debug.Log("Missed Note");
-        
     }
 }

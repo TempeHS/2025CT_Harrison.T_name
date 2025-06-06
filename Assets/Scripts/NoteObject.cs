@@ -43,15 +43,12 @@ public class NoteObject : MonoBehaviour
     {
         if (other.tag == "Activator")
         {
-            if (canBePressed) 
+            if (canBePressed)
             {
                 GameManager.instance.NoteMissed(); 
+                
+                canBePressed = false;
             }
-            
-            canBePressed = false; 
-
-            
-            Destroy(gameObject); 
             
         }
     }
