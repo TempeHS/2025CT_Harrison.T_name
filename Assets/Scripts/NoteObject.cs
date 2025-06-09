@@ -8,26 +8,63 @@ public class NoteObject : MonoBehaviour
 
     public bool canBePressed;
 
-    public KeyCode keyToPress;
-    // Start is called before the first frame update
+    public KeyCode[] keysToPress;
+    public bool hasBeenHit = false;
+    private Rigidbody2D rb;
+
+    public float noteFallSpeed;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Start()
     {
-
+        canBePressed = false;
+        hasBeenHit = false;
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.gravityScale = 0f;
+            rb.velocity = Vector2.zero;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
-        {
-            if (canBePressed)
-            {
-                gameObject.SetActive(false);
 
-                GameManager.instance.NoteHit();
+        transform.position -= new Vector3(0f, noteFallSpeed * Time.deltaTime, 0f);
+
+        bool anyKeyPressed = false;
+        foreach (KeyCode key in keysToPress)
+        {
+            if (Input.GetKeyDown(key))
+            {
+                anyKeyPressed = true;
+                break;
             }
-                
         }
+
+        if (anyKeyPressed)
+        {
+            if (canBePressed && !hasBeenHit)
+            {
+                // This is a successful hit!
+                GameManager.instance.NoteHit(); // Log the hit
+                hasBeenHit = true; // Mark as hit IMMEDIATELY
+
+                gameObject.SetActive(false); // Make it disappear after being hit
+                // Notes: If you ever implement hit animations/effects,
+                // you might want to delay SetActive(false) for a moment.
+            }
+        }
+    }
+
+    public void SetupMovement(float speed)
+    {
+        noteFallSpeed = speed;
     }
 
 
@@ -39,17 +76,30 @@ public class NoteObject : MonoBehaviour
         }
     }
 
-    private void OntriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Activator")
         {
+            if (hasBeenHit)
+            {
+                canBePressed = false;
+                return;
+            }
+
             if (canBePressed)
             {
-                GameManager.instance.NoteMissed(); 
-                
-                canBePressed = false;
+                GameManager.instance.NoteMissed();
+
+                if (rb != null)
+                {
+                    transform.SetParent(null);
+                    rb.bodyType = RigidbodyType2D.Dynamic;
+                    rb.gravityScale = 2f;
+                }
+                Destroy(gameObject, 5f);
             }
-            
+
+            canBePressed = false;
         }
     }
 }
