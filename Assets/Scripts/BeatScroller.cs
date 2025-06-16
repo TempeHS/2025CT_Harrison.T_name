@@ -537,7 +537,89 @@ public class BeatScroller : MonoBehaviour
         new List<NoteSpawnInfo> { },                                                                  // Empty beat
         new List<NoteSpawnInfo> { new NoteSpawnInfo(3), new NoteSpawnInfo(1) },                         // Right & Down Chord
         new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // All Four Notes!
+                                                                                                                            // --- END OF REPEATING SEGMENT (16 Beats) ---
+         new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1) }, // Left & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // Up & Right Chord
+        new List<NoteSpawnInfo> { },                                         // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(3) }, // Left & Right Chord
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2) }, // Triple Note Chord
+        new List<NoteSpawnInfo> { },                                                                  // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3), new NoteSpawnInfo(1) },                         // Right & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // All Four Notes!
+                                                                                                                            // --- END OF REPEATING SEGMENT (16 Beats) ---
+         new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1) }, // Left & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // Up & Right Chord
+        new List<NoteSpawnInfo> { },                                         // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(3) }, // Left & Right Chord
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2) }, // Triple Note Chord
+        new List<NoteSpawnInfo> { },                                                                  // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3), new NoteSpawnInfo(1) },                         // Right & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // All Four Notes!
+                                                                                                                            // --- END OF REPEATING SEGMENT (16 Beats) ---
+         new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1) }, // Left & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // Up & Right Chord
+        new List<NoteSpawnInfo> { },                                         // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(3) }, // Left & Right Chord
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2) }, // Triple Note Chord
+        new List<NoteSpawnInfo> { },                                                                  // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3), new NoteSpawnInfo(1) },                         // Right & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // All Four Notes!
+                                                                                                                            // --- END OF REPEATING SEGMENT (16 Beats) ---
+         new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1) }, // Left & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // Up & Right Chord
+        new List<NoteSpawnInfo> { },                                         // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(3) }, // Left & Right Chord
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(1) }, // Down
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3) }, // Right
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0) }, // Left
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(2) }, // Up
+
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2) }, // Triple Note Chord
+        new List<NoteSpawnInfo> { },                                                                  // Empty beat
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(3), new NoteSpawnInfo(1) },                         // Right & Down Chord
+        new List<NoteSpawnInfo> { new NoteSpawnInfo(0), new NoteSpawnInfo(1), new NoteSpawnInfo(2), new NoteSpawnInfo(3) }, // All Four Notes!
+                                                                                                                            // --- END OF REPEATING SEGMENT (16 Beats) ---
         // --- END OF REPEATING SEGMENT (16 Beats) ---
+        
     };
 
     void Start()
