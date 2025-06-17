@@ -23,6 +23,7 @@ public class BeatScroller : MonoBehaviour
     private float _noteFallDuration;
     private float nextBeatSpawnTime;
     private int currentBeatIndex = 0;
+    
 
     [System.Serializable]
     public class NoteSpawnInfo
