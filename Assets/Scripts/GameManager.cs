@@ -1,8 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;   
+using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,7 +19,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
 
     public int scorePerHit = 89;
-    public int scorePerMiss = -47;
+    public int scorePerMiss = -113;
 
     public GameObject startScreenUI;
 
@@ -28,11 +30,17 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public Button nextLevelButton;
 
-    public int nextLevelScoreThreshold = 30000; // Score threshold to unlock next level
+    public int nextLevelScoreThreshold = 110000; // Score threshold to unlock next level
 
     public GameObject pauseScreenUI;
-    private bool isPaused = false;
+    public bool isPaused = false;
     private bool gameFinished = false;
+
+    public int currentCombo;
+    public int maxCombo;
+    public TextMeshProUGUI comboText;
+    public float comboDisplayDuration = 0.5f;
+    private Coroutine comboDisplayCoroutine;
 
     private bool isApplicationInBackground = false;
 
@@ -43,6 +51,11 @@ public class GameManager : MonoBehaviour
     private float originalMusicVolume;
     public float endGameMusicVolume = 0.5f; // Volume for the end game music
     public float endGameMufflePitch = 0.8f;
+    
+    public float[] comboMultiplierTiers = { 0.5f, 1.0f, 1.2f, 1.5f, 2.0f, 3.0f }; // Multipliers for combos (e.g., 1x, 1.2x, etc.)
+    public int[] comboThresholds = { 0, 10, 25, 50, 100, 200 }; // Combo counts to reach each tier
+    public TextMeshProUGUI multiplierText; // UI text to display the current multiplier
+    private float currentScoreMultiplier = 1.0f; // Current active multiplier
 
 
     void Awake()
@@ -84,6 +97,15 @@ public class GameManager : MonoBehaviour
         {
             originalMusicVolume = theMusic.volume;
         }
+
+
+        currentCombo = 0;
+        maxCombo = 0;
+
+        if (comboText != null)
+        {
+            comboText.gameObject.SetActive(false); // Hide combo text initially
+        }
     }
 
 
@@ -119,6 +141,8 @@ public class GameManager : MonoBehaviour
                 {
                     startScreenUI.SetActive(false);
                 }
+                
+                ResetCombo();
 
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
@@ -278,47 +302,55 @@ public class GameManager : MonoBehaviour
         string rank = "F";
 
 
-        if (currentScore >= 60000)
+        if (currentScore >= 180000)
         {
-            rank = "S++";
+            rank = "SSS";
         }
-        else if (currentScore >= 58000)
+        else if (currentScore >= 175000)
+        {
+            rank = "SS+";
+        }
+        else if (currentScore >= 170000)
+        {
+            rank = "SS";
+        }
+        else if (currentScore >= 150000)
         {
             rank = "S+";
         }
-        else if (currentScore >= 55000)
+        else if (currentScore >= 130000)
         {
             rank = "S";
         }
-        else if (currentScore >= 50000)
+        else if (currentScore >= 120000)
         {
             rank = "A+";
         }
-        else if (currentScore >= 45000)
+        else if (currentScore >= 100000)
         {
             rank = "A";
         }
-        else if (currentScore >= 40000)
+        else if (currentScore >= 90000)
         {
             rank = "B+";
         }
-        else if (currentScore >= 35000)
+        else if (currentScore >= 80000)
         {
             rank = "B";
         }
-        else if (currentScore >= 30000)
+        else if (currentScore >= 70000)
         {
             rank = "C+";
         }
-        else if (currentScore >= 20000)
+        else if (currentScore >= 65000)
         {
             rank = "C";
         }
-        else if (currentScore >= 10000)
+        else if (currentScore >= 50000)
         {
             rank = "D+";
         }
-        else if (currentScore >= 8000)
+        else if (currentScore >= 450000)
         {
             rank = "D";
         }
@@ -334,6 +366,21 @@ public class GameManager : MonoBehaviour
         Debug.Log("Hit On Time");
         currentScore += scorePerHit;
         UpdateScoreDisplay();
+
+        currentCombo++;
+        if (currentCombo > maxCombo)
+        {
+            maxCombo = currentCombo;
+        }
+
+        CalculateCurrentMultiplier();
+        int scoreToAdd = Mathf.RoundToInt(scorePerHit * currentScoreMultiplier);
+        currentScore += scoreToAdd;
+
+        UpdateScoreDisplay();
+        UpdateComboText();
+        UpdateMultiplierText();
+
     }
 
     public void NoteMissed()
@@ -341,6 +388,33 @@ public class GameManager : MonoBehaviour
         Debug.Log("Missed Note");
         currentScore += scorePerMiss;
         UpdateScoreDisplay();
+
+        ResetCombo();
+        CalculateCurrentMultiplier();
+        UpdateMultiplierText();
+
+    }
+
+    private void UpdateMultiplierText()
+    {
+        if (multiplierText != null)
+        {
+            multiplierText.text = currentScoreMultiplier.ToString("F1") + "x";
+            multiplierText.gameObject.SetActive(true);
+        }
+    }
+
+    private void CalculateCurrentMultiplier()
+    {
+        currentScoreMultiplier = 1.0f; // Default to 1x
+        for (int i = comboThresholds.Length - 1; i >= 0; i--)
+        {
+            if (currentCombo >= comboThresholds[i])
+            {
+            currentScoreMultiplier = comboMultiplierTiers[i];
+            break; // Found the highest tier, exit loop
+            }
+    }
     }
 
     private void UpdateScoreDisplay()
@@ -349,6 +423,44 @@ public class GameManager : MonoBehaviour
         {
             scoreText.text = currentScore.ToString();
         }
+    }
+
+    IEnumerator HideGraphicAfterDelay(Graphic graphicToHide, float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        if (graphicToHide != null)
+        {
+            graphicToHide.gameObject.SetActive(false);
+        }
+    }
+
+    private void UpdateComboText()
+    {
+        if (comboText != null)
+        {
+            comboText.text = "" + currentCombo;
+
+            if (comboDisplayCoroutine != null)
+            {
+                StopCoroutine(comboDisplayCoroutine);
+            }
+            if (currentCombo > 0)
+            {
+                comboText.gameObject.SetActive(true);
+                comboDisplayCoroutine = StartCoroutine(HideGraphicAfterDelay(comboText, comboDisplayDuration));
+            }
+            else
+            {
+                comboText.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    public void ResetCombo()
+    {
+        currentCombo = 0;
+        UpdateComboText();
+        Debug.Log("Combo Reset");
     }
 
     public void RestartGame()
@@ -363,6 +475,7 @@ public class GameManager : MonoBehaviour
             theMusic.pitch = 1f;
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        ResetCombo();
     }
 
     public void GoToNextLevel()

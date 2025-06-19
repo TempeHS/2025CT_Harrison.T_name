@@ -138,6 +138,7 @@ MonoBehaviour:
   keysToPress: 6a00000012010000
   hasBeenHit: 0
   noteFallSpeed: 0
+  hitParticlePrefab: {fileID: 3579383908141788991, guid: eaa9c638da3d3104da702800ee66e3cd, type: 3}
 --- !u!50 &3448333006076086330
 Rigidbody2D:
   serializedVersion: 4

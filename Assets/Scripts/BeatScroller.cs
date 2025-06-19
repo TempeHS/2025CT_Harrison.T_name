@@ -715,7 +715,7 @@ public class BeatScroller : MonoBehaviour
             NoteObject noteObj = noteGo.GetComponent<NoteObject>();
             if (noteObj != null)
             {
-                noteObj.SetupMovement(noteSpeedPerSecond);
+                noteObj.Initialize(noteSpeedPerSecond);
             }
             else
             {

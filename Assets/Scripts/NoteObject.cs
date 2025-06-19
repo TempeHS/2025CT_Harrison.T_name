@@ -14,6 +14,8 @@ public class NoteObject : MonoBehaviour
 
     public float noteFallSpeed;
 
+    public GameObject hitParticlePrefab;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,7 +37,11 @@ public class NoteObject : MonoBehaviour
     void Update()
     {
 
-        transform.position -= new Vector3(0f, noteFallSpeed * Time.deltaTime, 0f);
+        if (!GameManager.instance.isPaused)
+        {
+            transform.position -= new Vector3(0f, noteFallSpeed * Time.deltaTime, 0f);
+        }
+        
 
         bool anyKeyPressed = false;
         foreach (KeyCode key in keysToPress)
@@ -55,6 +61,22 @@ public class NoteObject : MonoBehaviour
                 GameManager.instance.NoteHit(); // Log the hit
                 hasBeenHit = true; // Mark as hit IMMEDIATELY
 
+                if (hitParticlePrefab != null)
+                {
+                    GameObject hitParticle = Instantiate(hitParticlePrefab, transform.position, Quaternion.identity);
+
+                    ParticleSystem particleSystem = hitParticle.GetComponent<ParticleSystem>();
+
+                    if (particleSystem != null)
+                    {
+                        Destroy(hitParticle, particleSystem.main.duration);
+                    }
+                    else
+                    {
+                        Destroy(hitParticle, 2f); // Fallback if no ParticleSystem found
+                    }
+                }
+
                 gameObject.SetActive(false); // Make it disappear after being hit
                 // Notes: If you ever implement hit animations/effects,
                 // you might want to delay SetActive(false) for a moment.
@@ -62,9 +84,18 @@ public class NoteObject : MonoBehaviour
         }
     }
 
-    public void SetupMovement(float speed)
+    public void Initialize(float speed)
     {
         noteFallSpeed = speed;
+        canBePressed = false;
+        hasBeenHit = false;
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            rb.gravityScale = 0f;
+            rb.velocity = Vector2.zero;
+        }
+        gameObject.SetActive(true);
     }
 
 
