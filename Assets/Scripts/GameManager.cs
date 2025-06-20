@@ -302,23 +302,27 @@ public class GameManager : MonoBehaviour
         string rank = "F";
 
 
-        if (currentScore >= 180000)
+        if (currentScore >= 220000)
+        {
+            rank = "SSS+++";
+        }
+        else if (currentScore >= 210000)
+        {
+            rank = "SSS++";
+        }
+        else if (currentScore >= 200000)
+        {
+            rank = "SSS+";
+        }
+        else if (currentScore >= 180000)
         {
             rank = "SSS";
-        }
-        else if (currentScore >= 175000)
-        {
-            rank = "SS+";
         }
         else if (currentScore >= 170000)
         {
             rank = "SS";
         }
-        else if (currentScore >= 150000)
-        {
-            rank = "S+";
-        }
-        else if (currentScore >= 130000)
+        else if (currentScore >= 160000)
         {
             rank = "S";
         }
@@ -353,6 +357,10 @@ public class GameManager : MonoBehaviour
         else if (currentScore >= 450000)
         {
             rank = "D";
+        }
+        else if (currentScore >= -50000)
+        {
+            rank = "Loser";
         }
 
         if (rankText != null)
