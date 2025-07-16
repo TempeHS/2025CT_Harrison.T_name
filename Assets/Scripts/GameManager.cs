@@ -110,11 +110,6 @@ public class GameManager : MonoBehaviour
             countdownText.gameObject.SetActive(false); // Hide countdown text initially
         }
         
-        if (resumeButton != null)
-        {
-            resumeButton.onClick.AddListener(StartCountdownAndResume);
-        }
-
         if (comboText != null)
         {
             comboText.gameObject.SetActive(false); // Hide combo text initially
@@ -347,6 +342,11 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator CountdownToResume() 
     {
+        if (pauseScreenUI != null)
+        {
+            pauseScreenUI.SetActive(false); // Hide pause screen UI during countdown
+        }
+
         countdownText.gameObject.SetActive(true);
 
         for (int i = 3; i > 0; i--)
@@ -505,7 +505,7 @@ public class GameManager : MonoBehaviour
         {
             rank = "D+";
         }
-        else if (currentScore >= 450000) 
+        else if (currentScore >= 45000) 
         {
             rank = "D";
         }

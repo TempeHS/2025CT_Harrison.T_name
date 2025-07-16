@@ -37,7 +37,7 @@ public class NoteObject : MonoBehaviour
     void Update()
     {
 
-        if (!GameManager.instance.isPaused)
+        if (GameManager.instance != null && !GameManager.instance.isPaused)
         {
             transform.position -= new Vector3(0f, noteFallSpeed * Time.deltaTime, 0f);
         }
