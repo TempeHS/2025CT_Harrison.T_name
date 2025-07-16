@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     public float comboDisplayDuration = 0.5f;
     private Coroutine comboDisplayCoroutine;
 
-    private bool isApplicationInBackground = false;
+    public bool isApplicationInBackground = false;
 
     public float visualScrollSpeedMultiplier = 1.0f;
     public Slider noteSpeedSlider;

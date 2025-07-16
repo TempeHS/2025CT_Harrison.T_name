@@ -19017,7 +19017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 233.5}
+  m_AnchoredPosition: {x: -3, y: 117.93}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420363019
@@ -58152,6 +58152,7 @@ MonoBehaviour:
   maxCombo: 30
   comboText: {fileID: 420363019}
   comboDisplayDuration: 5
+  isApplicationInBackground: 0
   visualScrollSpeedMultiplier: 1
   noteSpeedSlider: {fileID: 367131940}
   speedValueText: {fileID: 1904615649}
@@ -58631,7 +58632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cb32212b163cc42ac7ba329f74f757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatTempo: 125
+  beatTempo: 120
   hasStarted: 0
   laneTargets:
   - {fileID: 1577687354}
@@ -85170,7 +85171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 452.1}
+  m_AnchoredPosition: {x: 1, y: 257.7}
   m_SizeDelta: {x: 249.42, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1950820896
@@ -85220,10 +85221,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.75
+  m_fontSize: 18
   m_fontSizeBase: 18
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -92193,7 +92194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.7, y: 177.6}
+  m_AnchoredPosition: {x: -2.7, y: 71.6}
   m_SizeDelta: {x: 129.78, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2126030845
