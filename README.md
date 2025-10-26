@@ -1,7 +1,7 @@
 
 # Descent - Abysall Plummet
 
-![](Sprites/filename Untitled design.png)
+![](Sprites/filename%20Untitled-design.png)
 
 Descent : Expedtion. To play simple hold the A,S,D keys
 
