@@ -29,13 +29,18 @@ This game is simple 2D platformer
 
 
 ### Controls / Keybinds 
+  
+  Descent : Expedition            Descent : Jellyfish Drop
+-------------------------        ---------------------------
+| Function  | Keybind  |         | Function |  Keybind           |
+| ---       | ---      |         | -------------------- |-------------------|
+| Walk Right| D        |         | Left / Yellow Turtle | D / :arrow_left:  |
+| Walk Left | A        |         | Up / Blue Turtle     | F / :arrow_up:    |
+| Jump      | SpaceBar |         | Down / Green Turtle  | J / :arrow_down:  |
+                                 | Right / Red Turtle   | K / :arrow_right: | 
+                                 | Escape               | 
 
-| Function  | Keybind   |
-| ---       | ---       |
-| Walk Right| D       |
-| Walk Left | A        |
-| Jump      |           |
-| Attack    |           |
+
 
 ### Executing program
 
