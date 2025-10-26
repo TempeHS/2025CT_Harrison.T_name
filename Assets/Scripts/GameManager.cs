@@ -548,7 +548,7 @@ public class GameManager : MonoBehaviour
         UpdateScoreDisplay();
 
         ResetCombo();
-        CalculateCurrentMultiplier(); // Recalculate multiplier after combo reset
+        CalculateCurrentMultiplier(); 
         UpdateMultiplierText();
 
     }

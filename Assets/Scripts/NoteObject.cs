@@ -33,7 +33,7 @@ public class NoteObject : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
@@ -77,9 +77,7 @@ public class NoteObject : MonoBehaviour
                     }
                 }
 
-                gameObject.SetActive(false); // Make it disappear after being hit
-                // Notes: If you ever implement hit animations/effects,
-                // you might want to delay SetActive(false) for a moment.
+                gameObject.SetActive(false); 
             }
         }
     }

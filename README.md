@@ -1,10 +1,16 @@
-# Project Title
+`#RRGGBB`
+# Descent - Abysall Plummet
 
-My Game
+Descent : Expedtion. To play simple hold the A,S,D keys
+
+
+Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as they align with the turtles at the bottom of the screen. As the music plays, jellyfish will descend, and your goal is to tap each lane right when its jellyfish perfectly overlaps its corresponding target. 
+
+The game ends once the music has stopped. To succeed, listen to the music as its your guide.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This game is simple 2D platformer
 
 ## Getting Started
 
