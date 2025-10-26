@@ -1,6 +1,8 @@
 `#RRGGBB`
 # Descent - Abysall Plummet
 
+![](images/filename Untitled design.png)
+
 Descent : Expedtion. To play simple hold the A,S,D keys
 
 
@@ -24,6 +26,17 @@ This game is simple 2D platformer
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 
+
+
+### Controls / Keybinds 
+
+| Function  | Keybind   |
+| ---       | ---       |
+| Walk Right| D       |
+| Walk Left | A        |
+| Jump      |           |
+| Attack    |           |
+
 ### Executing program
 
 * How to run the program
@@ -31,6 +44,8 @@ This game is simple 2D platformer
 ```
 code blocks for commands
 ```
+
+
 
 ## Help
 
