@@ -18,7 +18,6 @@ public class PlayerControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         speedX = Input.GetAxisRaw("Horizontal") * movSpeed;

@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneTransitioner : MonoBehaviour
 {
-    public string nextIntroSceneName = "Scenes/TitleScreen"; // Name of the next scene to load after the video finishes
-
+    public string nextIntroSceneName = "Scenes/TitleScreen";
     private VideoPlayer videoPlayer;
 
     void Awake()
@@ -33,7 +32,7 @@ public class CutsceneTransitioner : MonoBehaviour
     {
         if (videoPlayer != null)
         {
-            videoPlayer.loopPointReached -= OnVideoFinished; // Unsubscribe from the event
+            videoPlayer.loopPointReached -= OnVideoFinished; 
         }
     }
 }

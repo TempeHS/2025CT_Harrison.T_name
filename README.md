@@ -1,9 +1,9 @@
 
 # Descent - Abysall Plummet
 
-![](Sprites/filename%20Untitled-design.png)
+![Title](Untitled_design.png)
 
-Descent : Expedtion. To play simple hold the A,S,D keys
+Descent : Expedtion. To play simple hold the A & D keys to move either left or right.
 
 
 Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as they align with the turtles at the bottom of the screen. As the music plays, jellyfish will descend, and your goal is to tap each lane right when its jellyfish perfectly overlaps its corresponding target. 
@@ -58,6 +58,28 @@ Any advise for common problems or issues.
 ```
 command to run if program contains helper info
 ```
+
+
+## Turtlorials 
+
+https://www.youtube.com/watch?v=cZzf1FQQFA0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=1
+https://www.youtube.com/watch?v=PMfhS-kEvc0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=2
+https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=3
+https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=4
+https://www.youtube.com/watch?v=Usuh7WUAPbg&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=5
+https://www.youtube.com/watch?v=vN4H7N_k3eg&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=3
+https://www.youtube.com/watch?v=QfLhSzeZaoA&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=4
+https://www.youtube.com/watch?v=odStG_LfPMQ&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=9
+https://www.youtube.com/watch?v=DX7HyN7oJjE&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=23
+https://www.youtube.com/watch?v=K1xZ-rycYY8
+https://www.youtube.com/watch?v=FXXc0hTWIMs
+https://www.youtube.com/watch?v=Sg_w8hIbp4Y&t=315s
+https://www.youtube.com/watch?v=7qcKMUioPI0
+https://www.youtube.com/watch?v=S10eaYrNnYM
+
+
+
+
 
 ## Authors
 
