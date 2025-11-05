@@ -1,7 +1,7 @@
 
 # Descent - Abysall Plummet
 
-<img src="Averysaidtorenamethisimage.png" width="48">
+<img src="Averysaidtorenamethisimage.png" width="480">
 
 
 
