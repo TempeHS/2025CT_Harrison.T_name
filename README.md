@@ -1,7 +1,7 @@
 
 # Descent - Abysall Plummet
 
-![Title](Averysaidtorenamethisimage.png)
+![Title](Averysaidtorenamethisimage.png = 250x) 
 
 Descent : Expedtion. To play simple hold the A & D keys to move either left or right.
 
