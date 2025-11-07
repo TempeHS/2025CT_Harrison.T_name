@@ -1,7 +1,7 @@
 
 # <h1 align=center> 🤿 DESCENT : ABYSSAL PLUMMET 🤿 <br/> Harrison Traue
 
-<img src="Averysaidtorenamethisimage.png" width="350">
+<h3 align=center> <img src="Averysaidtorenamethisimage.png" width="350">
 
 
 ### Gameplay and elements
