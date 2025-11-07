@@ -59,7 +59,7 @@ While the core aesthetic and structure of my rhythm game was nearly complete. My
 
 ### Gameplay and elements
 -------------------------    
-![](2025CTT.mp4)
+![Gameplay](2025CTT.mp4)
 
 
 
