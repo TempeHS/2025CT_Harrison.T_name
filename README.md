@@ -105,6 +105,46 @@ Descent : Jellyfish Drop
 
 ## Gameplay  🎮 
 
+#### Main menu
+
+When you first launch Descent : Abyssal plummet, you are greeted with a title animation sequence which eventually leads you into the main menu. Which serves as the home page. There is a play button. An options button, which has no function as it lacks settings. And a functional quit button to exit the game. This main design is heavily inspired off the [tutorial](https://www.youtube.com/watch?v=DX7HyN7oJjE&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=23) design, with the exception of using my own sprites.
+
+<br />
+<br />
+<br />
+
+<img width="851" height="471" alt="Image" src="https://github.com/user-attachments/assets/d945294d-4132-4be7-8ff8-d555a248d7a7" />
+
+
+<br />
+<br />
+<br />
+
+#### Level 1
+
+Descent : Expedition. My first level. This was the foundation of my game. The first thing someone first starting unity would do. Go through the basic [movement](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/PlayerMovement.cs) tutorials, set up a [camera](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/CameraController.cs.meta) that follows you. Implementation of [enemies or obstacles](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/GameController.cs), introduction of tile palette, maybe play around with particles and light. Thats exactly what I had done. Made my own *simple* 2D platforming game. 
+
+<br />
+<br />
+<br /> 
+
+<img width="1086" height="391" alt="Image" src="https://github.com/user-attachments/assets/80ef0f1e-6a19-49eb-9ea3-dd2fc8cd2662" />
+
+<br />
+<br />
+<br />
+
+I had shortly altered paths to develop something more of my interest which will be shown in Level 2. Shown in the image below is a demonstration of the use of 2D light. Understanding in particle emmitting. And the usage of tile palettes. 
+
+<img width="1086" height="413" alt="Image" src="https://github.com/user-attachments/assets/42c68450-a49c-465d-9ce3-10092c43cfd3" />
+
+<br />
+<br />
+<br />
+
+
+#### Level 2
+
 
 Descent : Jellyfish drop utilizes the four standard keys for rhythm game input, mapping directly to the four lanes where notes descend. Lane 1 (left) is hit with the D or LEFT ARROW key, Lane 2 with F or UP ARROW key, Lane 3 with J or DOWN ARROW key, and the final Lane 4 (right) with K or RIGHT ARROW KEY. With every successful hit, a bubbly explosion particle effect plays where the note has hit. Each of these lanes possess a turtle which acts as the Receiver which reacts upon player input, which registers the hits of the [note objects](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/NoteObject.cs). 
 
