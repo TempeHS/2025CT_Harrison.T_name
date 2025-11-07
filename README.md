@@ -1,5 +1,5 @@
 
-# <h1 align=center> :minidisc: DESCENT : ABYSSAL PLUMMET :minidisc: <br/> Roboto
+# <h1 align=center> 🤿 DESCENT : ABYSSAL PLUMMET 🤿 <br/> Harrison Traue
 
 <img src="Averysaidtorenamethisimage.png" width="350">
 
