@@ -165,7 +165,7 @@ Descent : Jellyfish drop utilizes the four standard keys for rhythm game input, 
 
 
 
-The Score tracks your total points, updating upon every successful hit or miss. There is a combo counter however there is no working code backing it up so it is only there for the looks. Score increases by 89 per hit, and decreases by -113 to further increase difficulty. All notes must be hit as they pass the invisible Hit Line at the bottom of the track which is marked by the turtles. If the ESC key is pressed, the Pause Menu appears, offering options to Resume (after a brief 3-second countdown), Restart the song, or return to the Main Menu. 
+The Score tracks your total points, updating upon every successful hit or miss. There is a combo counter however there is no working code backing it up so it is only there for the looks. Score increases by 89 per hit, and decreases by -113 to further increase difficulty. All notes must be hit as they pass the invisible Hit Line at the bottom of the track which is marked by the turtles. If the ESC key is pressed, the Pause Menu appears, offering options to Resume (after a brief 3-second countdown), Restart the song, or return to the Main Menu. Most of this is found in [the GameManager script.](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/GameManager.cs)
 
 <br />
 <br />
