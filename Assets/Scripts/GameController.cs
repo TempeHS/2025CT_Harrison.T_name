@@ -29,4 +29,4 @@ public class GameController : MonoBehaviour
     {
         transform.position = startPos;
     }
-}
+} 
