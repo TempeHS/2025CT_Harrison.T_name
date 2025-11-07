@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     
     public float[] comboMultiplierTiers = { 0.5f, 1.0f, 1.2f, 1.5f, 2.0f, 3.0f }; // Multipliers for combos 
     public int[] comboThresholds = { 0, 10, 25, 50, 100, 200 }; // Combo counts to reach each tier
-    public TextMeshProUGUI multiplierText; // UI text to display the current multiplier
+    public TextMeshProUGUI multiplierText; 
     private float currentScoreMultiplier = 1.0f; // Current active multiplier
 
 
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         }
         else if (instance != this)
         {
-            Destroy(gameObject); // Ensure only one instance exists
+            Destroy(gameObject); 
             return;
         }
 
@@ -107,20 +107,20 @@ public class GameManager : MonoBehaviour
 
         if (countdownText != null)
         {
-            countdownText.gameObject.SetActive(false); // Hide countdown text initially
+            countdownText.gameObject.SetActive(false); 
         }
         
         if (comboText != null)
         {
-            comboText.gameObject.SetActive(false); // Hide combo text initially
+            comboText.gameObject.SetActive(false); 
         }
 
         if (ComboTextDisplay != null) 
         {
-            ComboTextDisplay.gameObject.SetActive(false); // Hide the "random" text initially
+            ComboTextDisplay.gameObject.SetActive(false); 
         }
         
-        if (multiplierText != null) // Ensure multiplier text is also hidden at start
+        if (multiplierText != null) 
         {
             multiplierText.gameObject.SetActive(false);
         }
@@ -164,16 +164,16 @@ public class GameManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 
-                if (ComboTextDisplay != null) // Corrected variable name
+                if (ComboTextDisplay != null) 
                 {
-                    ComboTextDisplay.gameObject.SetActive(true); // Show the "random" text when the game starts
+                    ComboTextDisplay.gameObject.SetActive(true); 
                 }
             }
         }
         else
         {
             
-            if (ComboTextDisplay != null) // Corrected variable name
+            if (ComboTextDisplay != null) 
             {
                 ComboTextDisplay.gameObject.SetActive(startPlaying && !isPaused && !gameFinished);
             }
@@ -181,13 +181,13 @@ public class GameManager : MonoBehaviour
             
             if (comboText != null)
             {
-                // If paused or game finished, hide combo text immediately
+                
                 if (isPaused || gameFinished)
                 {
                     comboText.gameObject.SetActive(false);
                     if (comboDisplayCoroutine != null)
                     {
-                        StopCoroutine(comboDisplayCoroutine); // Stop any active fade-out coroutine
+                        StopCoroutine(comboDisplayCoroutine); 
                     }
                 }
                 
@@ -195,7 +195,7 @@ public class GameManager : MonoBehaviour
             if (multiplierText != null)
             {
                 
-                multiplierText.gameObject.SetActive(startPlaying && !isPaused && !gameFinished); // Removed currentCombo > 0 for 1.0x to always show
+                multiplierText.gameObject.SetActive(startPlaying && !isPaused && !gameFinished);
             }
 
 
@@ -253,7 +253,7 @@ public class GameManager : MonoBehaviour
             theMusic.Pause();
         }
 
-        // Hide combo, multiplier, and "random" text when paused
+
         if (comboText != null)
         {
             comboText.gameObject.SetActive(false);
@@ -266,7 +266,7 @@ public class GameManager : MonoBehaviour
         {
             multiplierText.gameObject.SetActive(false);
         }
-        if (ComboTextDisplay != null) // Corrected variable name
+        if (ComboTextDisplay != null) 
         {
             ComboTextDisplay.gameObject.SetActive(false);
         }
@@ -311,7 +311,7 @@ public class GameManager : MonoBehaviour
             {
                 multiplierText.gameObject.SetActive(true);
             }
-            if (ComboTextDisplay != null) // Corrected variable name
+            if (ComboTextDisplay != null) 
             {
                 ComboTextDisplay.gameObject.SetActive(true);
             }
@@ -344,7 +344,7 @@ public class GameManager : MonoBehaviour
     {
         if (pauseScreenUI != null)
         {
-            pauseScreenUI.SetActive(false); // Hide pause screen UI during countdown
+            pauseScreenUI.SetActive(false); 
         }
 
         countdownText.gameObject.SetActive(true);

@@ -1,5 +1,7 @@
 
-# Descent - Abysall Plummet
+# <p style="text-align:center;">DESCENT : ABYSSAL PLUMMET</p>
+
+## Harrison Traue
 
 <img src="Averysaidtorenamethisimage.png" width="350">
 
@@ -49,8 +51,12 @@ Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as 
 - Paralex background for Level 1
 
 
-### Gameplay and elements
 
+
+
+
+### Gameplay and elements
+-------------------------    
 
 
 
@@ -103,10 +109,12 @@ code blocks for commands
 
 
 
-## Asset Showcase
+## Asset Showcase :open_file_folder: 
+-------------------------    
 
 [View all Assets](https://github.com/TempeHS/2025CT_Harrison.T_name/tree/main/Assets/Sprites)
 
+Every 2D element **except** for the smoke cloud and main menu background has been produced by the *Artist* (Me)
 
 ## Tutorials
 
