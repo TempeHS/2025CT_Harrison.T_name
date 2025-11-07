@@ -73,7 +73,7 @@ public class NoteObject : MonoBehaviour
                     }
                     else
                     {
-                        Destroy(hitParticle, 2f); // Fallback if no ParticleSystem found
+                        Destroy(hitParticle, 2f); 
                     }
                 }
 

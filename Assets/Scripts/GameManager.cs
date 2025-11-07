@@ -405,29 +405,29 @@ public class GameManager : MonoBehaviour
         {
             if (currentScore >= nextLevelScoreThreshold)
             {
-                nextLevelButton.gameObject.SetActive(true); // Show next level button
+                nextLevelButton.gameObject.SetActive(true); 
             }
             else
             {
-                nextLevelButton.gameObject.SetActive(false); // Hide next level button
+                nextLevelButton.gameObject.SetActive(false); 
             }
         }
         if (restartButton != null)
         {
-            restartButton.gameObject.SetActive(true); // Always show restart button
+            restartButton.gameObject.SetActive(true); 
         }
 
         if (comboText != null)
         {
-            comboText.gameObject.SetActive(false); // Hide combo text at the end of the game
+            comboText.gameObject.SetActive(false); 
         }
 
-        if (ComboTextDisplay != null) // Corrected variable name
+        if (ComboTextDisplay != null) 
         {
-            ComboTextDisplay.gameObject.SetActive(false); // Hide the "random" text at the end of the game
+            ComboTextDisplay.gameObject.SetActive(false); 
         }
 
-        if (multiplierText != null) // Hide multiplier text at the end of the game
+        if (multiplierText != null) 
         {
             multiplierText.gameObject.SetActive(false);
         }
