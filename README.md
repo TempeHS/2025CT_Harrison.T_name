@@ -6,11 +6,14 @@
 <img src="Averysaidtorenamethisimage.png" width="350">
 
 
-Descent - Abyssal Plummet, Is the name of my game. The aim of this game is to progress through deep sea themed levels completing a variety of Minigames that I had hoped to design, with the finale of the game being a deep sea brawl against a fierce crab. Plot wise, It needs work however while developing I had mostly drifted off course and did whatever I thought was fun to do, or whatever I invested my thoughts in to.
+### Gameplay and elements
+-------------------------    
 
-Descent : Expedtion. To play simple hold the A & D keys to move either left or right. This first level is a simple 2D platformer consisting of obstacles, atmosphere and low gravity...   
+https://github.com/user-attachments/assets/ae580dbe-157b-4bfb-b74e-825bb6fc0b8c
 
-Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as they align with the turtles at the bottom of the screen. As the music plays, jellyfish will descend, and your goal is to tap each lane right when its jellyfish perfectly overlaps its corresponding target. The game ends once the music has stopped. To succeed, listen to the music as its your guide.  This is the 2nd level of the adventurous dive. Developement is inspired by multiple rhythm games already existing on the internet. Popular games include, 'Rhythm +', 'Friday Night Funkin', 'Osu Mania' and quite the handful more. Gameplay is practically identical, however I have implemented a few of my own twists to match my overall theme. 
+
+
+
 
 ## What I have delivered and what went well :star:
 
@@ -52,28 +55,21 @@ Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as 
 - Synced sound for the beginning cutscene
 - Paralex background for Level 1
 
-While the core aesthetic and structure of my rhythm game was nearly complete. My most critical failure was in inability to fix the Combo and score multiplier system, which made the game feel less rewarding in a way. Content in level 1 is lacking. And it fails to introduce my actual game and its storyline. I also had some critical errors with the intial setup of the [beatscroller](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/BeatScroller.cs) code, as the manual method of alligning notes was too much of a problem.  
+**While the core aesthetic and structure of my rhythm game was nearly complete. My most critical failure was in inability to fix the Combo and score multiplier system, which made the game feel less rewarding in a way. Content in level 1 is lacking. And it fails to introduce my actual game and its storyline. I also had some critical errors with the intial setup of the [beatscroller](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/BeatScroller.cs) code, as the manual method of alligning notes was too much of a problem.** 
 
 
 
+### About my project
 
-### Gameplay and elements
--------------------------    
+## General
 
-https://github.com/user-attachments/assets/ae580dbe-157b-4bfb-b74e-825bb6fc0b8c
+Descent - Abyssal Plummet, Is the name of my game. The aim of this game is to progress through deep sea themed levels completing a variety of Minigames that I had hoped to design, with the finale of the game being a deep sea brawl against a fierce crab. Plot wise, It needs work however while developing I had mostly drifted off course and did whatever I thought was fun to do, or whatever I invested my thoughts in to.
 
+## Objective and Idea
 
+Descent : Expedtion. To play simple hold the A & D keys to move either left or right until you reach the end!.  This first level is a simple 2D platformer consisting of obstacles, atmosphere and low gravity...   
 
-
-
-
-
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
+Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as they align with the turtles at the bottom of the screen. As the music plays, jellyfish will descend, and your goal is to tap each lane right when its jellyfish perfectly overlaps its corresponding target. The game ends once the music has stopped. To succeed, listen to the music as its your guide.  This is the 2nd level of the adventurous dive. Developement is inspired by multiple rhythm games already existing on the internet. Popular games include, 'Rhythm plus', 'Friday Night Funkin', 'Osu Mania' and quite the handful more. Gameplay is practically identical, however I have implemented a few of my own twists to match my overall theme. 
 
 
 ### Controls / Keybinds ⌨️
@@ -82,8 +78,8 @@ Descent : Expedition
 -------------------------      
 | Function  | Keybind  |        
 | ---       | ---      |        
-| Walk Right| D        |         
-| Walk Left | A        |        
+| Walk Right| ➡️ / D  |         
+| Walk Left | ⬅️ / A  |        
 | Jump      | SpaceBar |         
 
 
@@ -91,10 +87,10 @@ Descent : Jellyfish Drop
 ---------------------------
 | Function |  Keybind  |
 | -------------------- |-------------------|
-| Left / Yellow Turtle | D / :arrow_left:  |
-| Up / Blue Turtle     | F / :arrow_up:    |
-| Down / Green Turtle  | J / :arrow_down:  |
-| Right / Red Turtle   | K / :arrow_right: | 
+| Left / Yellow Turtle | D / ⬅️            |
+| Up / Blue Turtle     | F / ⬆️            |
+| Down / Green Turtle  | J / ⬇️            |
+| Right / Red Turtle   | K / ➡️            | 
 | Pause Panel          | Escape key        |
 
 
