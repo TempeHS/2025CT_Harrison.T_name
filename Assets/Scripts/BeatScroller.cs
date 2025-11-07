@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class BeatScroller : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    
     public float beatTempo;
 
     public bool hasStarted;
@@ -631,13 +630,12 @@ public class BeatScroller : MonoBehaviour
 
 
 
-    // Update is called once per frame
     void Update()
     {
 
         if (!hasStarted)
         {
-            return; // Don't update if the game hasn't started
+            return; 
         }
         if (Time.time >= nextBeatSpawnTime && currentBeatIndex < beatMap.Count)
         {
@@ -683,8 +681,8 @@ public class BeatScroller : MonoBehaviour
                     notePrefabToUse = rightArrowPrefab; break;
                 default:
                 Debug.LogWarning($"Invalid lane index {noteInfo.laneIndex}. Skipping note spawn.");
-                notePrefabToUse = null; // Reset to null if the lane index is invalid
-                break; // Skip this iteration if the lane index is invalid
+                notePrefabToUse = null; 
+                break; 
             }
 
             if (notePrefabToUse == null)

@@ -57,9 +57,9 @@ public class NoteObject : MonoBehaviour
         {
             if (canBePressed && !hasBeenHit)
             {
-                // This is a successful hit!
-                GameManager.instance.NoteHit(); // Log the hit
-                hasBeenHit = true; // Mark as hit IMMEDIATELY
+                
+                GameManager.instance.NoteHit(); 
+                hasBeenHit = true; 
 
                 if (hitParticlePrefab != null)
                 {

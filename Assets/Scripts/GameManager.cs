@@ -50,13 +50,13 @@ public class GameManager : MonoBehaviour
     public Slider noteSpeedSlider;
     public TMP_Text speedValueText;
 
-    public TextMeshProUGUI ComboTextDisplay; // This is the 'random text' you want to control
+    public TextMeshProUGUI ComboTextDisplay;
 
     private float originalMusicVolume;
     public float endGameMusicVolume = 0.5f; // Volume for the end game music
     public float endGameMufflePitch = 0.8f;
     
-    public float[] comboMultiplierTiers = { 0.5f, 1.0f, 1.2f, 1.5f, 2.0f, 3.0f }; // Multipliers for combos (e.g., 1x, 1.2x, etc.)
+    public float[] comboMultiplierTiers = { 0.5f, 1.0f, 1.2f, 1.5f, 2.0f, 3.0f }; // Multipliers for combos 
     public int[] comboThresholds = { 0, 10, 25, 50, 100, 200 }; // Combo counts to reach each tier
     public TextMeshProUGUI multiplierText; // UI text to display the current multiplier
     private float currentScoreMultiplier = 1.0f; // Current active multiplier
@@ -355,12 +355,12 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(1f); 
         }
 
-        countdownText.text = "GO!"; // Optional: show "GO!" briefly
-        yield return new WaitForSecondsRealtime(0.5f); // Short "GO!" display duration
+        countdownText.text = "GO!"; 
+        yield return new WaitForSecondsRealtime(0.5f); 
 
-        countdownText.gameObject.SetActive(false); // Hide the countdown text
+        countdownText.gameObject.SetActive(false); 
 
-        // Resume the game
+
         ActualResumeGame();
     }
 
