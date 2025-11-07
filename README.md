@@ -1,5 +1,5 @@
 
-# <p style="text-align:center;">DESCENT : ABYSSAL PLUMMET</p>
+# DESCENT : ABYSSAL PLUMMET
 
 ## Harrison Traue
 
