@@ -103,10 +103,13 @@ Descent : Jellyfish Drop
 | Pause Panel          | Escape key        |
 
 
-### Gameplay  🎮 
+## Gameplay  🎮 
 
 
 Descent : Jellyfish drop utilizes the four standard keys for rhythm game input, mapping directly to the four lanes where notes descend. Lane 1 (left) is hit with the D or LEFT ARROW key, Lane 2 with F or UP ARROW key, Lane 3 with J or DOWN ARROW key, and the final Lane 4 (right) with K or RIGHT ARROW KEY. With every successful hit, a bubbly explosion particle effect plays where the note has hit. Each of these lanes possess a turtle which acts as the Receiver which reacts upon player input, which registers the hits of the [note objects](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/NoteObject.cs). 
+
+
+
 
 
 <img width="745" height="414" alt="Image" src="https://github.com/user-attachments/assets/c7233413-a7c8-41cd-9197-6084973cf4a2" />
@@ -115,7 +118,13 @@ Descent : Jellyfish drop utilizes the four standard keys for rhythm game input, 
 
 
 
+
+
+
 The Score tracks your total points, updating upon every successful hit or miss. There is a combo counter however there is no working code backing it up so it is only there for the looks. Score increases by 89 per hit, and decreases by -113 to further increase difficulty. All notes must be hit as they pass the invisible Hit Line at the bottom of the track which is marked by the turtles. If the ESC key is pressed, the Pause Menu appears, offering options to Resume (after a brief 3-second countdown), Restart the song, or return to the Main Menu. 
+
+
+
 
 <img width="786" height="442" alt="Image" src="https://github.com/user-attachments/assets/790ffa6d-d2cb-4597-87b9-854a6b415d46" />
 
