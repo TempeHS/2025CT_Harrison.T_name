@@ -1,8 +1,6 @@
 
 # <h1 align=center> :minidisc: DESCENT : ABYSSAL PLUMMET :minidisc: <br/> Roboto
 
-<h3 align=center> HARRISON TRAUE
-
 <img src="Averysaidtorenamethisimage.png" width="350">
 
 
