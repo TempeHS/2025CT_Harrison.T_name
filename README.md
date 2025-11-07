@@ -6,7 +6,7 @@
 <img src="Averysaidtorenamethisimage.png" width="350">
 
 
-Descent - Absyall Plummet, Is the name of my game. The aim of this game is to progress through deep sea themed levels completing a variety of Minigames that I had hoped to design, with the finale of the game being a deep sea brawl against a fierce crab. Plot wise, It needs work however while developing I had mostly drifted off course and did whatever I thought was fun to do, or whatever I invested my thoughts in to.
+Descent - Abyssal Plummet, Is the name of my game. The aim of this game is to progress through deep sea themed levels completing a variety of Minigames that I had hoped to design, with the finale of the game being a deep sea brawl against a fierce crab. Plot wise, It needs work however while developing I had mostly drifted off course and did whatever I thought was fun to do, or whatever I invested my thoughts in to.
 
 Descent : Expedtion. To play simple hold the A & D keys to move either left or right. This first level is a simple 2D platformer consisting of obstacles, atmosphere and low gravity...   
 
@@ -38,6 +38,8 @@ Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as 
 
 
 
+**I am really proud of how my game turned out, from the basic 2d platformer to visually appealing rhythm game. I feel like I have excelled in creating a vision on how I wanted my game to look - Aquatic. I managed to build a solid core game loop, successfully implementing the BeatScroller for note movement and a stacked GameManager.cs to handle complex state transitions like pausing and game over. I was estactic when the score system worked, holding multiple score threshholds. I focused on polishing the game by adding player friendly features pause panel, resume and restart buttons. I also included combo text and background music to further enchance visual feedback. Most of my time was focused on developing the rhythm game (Or level 2) so level 1 had minimal code, and mostly focused on visual elements. The simple title scene sequence was something I was also proud of.**
+
 
 ## What I had hoped to deliver and what didn't go well :x:
 
@@ -50,14 +52,14 @@ Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as 
 - Synced sound for the beginning cutscene
 - Paralex background for Level 1
 
-
+While the core aesthetic and structure of my rhythm game was nearly complete. My most critical failure was in inability to fix the Combo and score multiplier system, which made the game feel less rewarding in a way. Content in level 1 is lacking. And it fails to introduce my actual game and its storyline. I also had some critical errors with the intial setup of the [beatscroller](https://github.com/TempeHS/2025CT_Harrison.T_name/blob/main/Assets/Scripts/BeatScroller.cs) code, as the manual method of alligning notes was too much of a problem.  
 
 
 
 
 ### Gameplay and elements
 -------------------------    
-
+![Gameplay](2025CT.mp4)
 
 
 
@@ -75,7 +77,7 @@ Descent : Jellyfish drop. To play simply tap the falling jellyfish precisely as 
 
 
 
-### Controls / Keybinds 
+### Controls / Keybinds ⌨️
 
 Descent : Expedition           
 -------------------------      
@@ -118,27 +120,48 @@ Every 2D element **except** for the smoke cloud and main menu background has bee
 
 ## Tutorials
 
-https://www.youtube.com/watch?v=cZzf1FQQFA0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=1
-https://www.youtube.com/watch?v=PMfhS-kEvc0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=2
-https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=3
-https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=4
-https://www.youtube.com/watch?v=Usuh7WUAPbg&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=5
-https://www.youtube.com/watch?v=vN4H7N_k3eg&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=3
-https://www.youtube.com/watch?v=QfLhSzeZaoA&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=4
-https://www.youtube.com/watch?v=odStG_LfPMQ&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=9
-https://www.youtube.com/watch?v=DX7HyN7oJjE&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=23
-https://www.youtube.com/watch?v=K1xZ-rycYY8
-https://www.youtube.com/watch?v=FXXc0hTWIMs
-https://www.youtube.com/watch?v=Sg_w8hIbp4Y&t=315s
-https://www.youtube.com/watch?v=7qcKMUioPI0
-https://www.youtube.com/watch?v=S10eaYrNnYM
+
+[Rhythm game tutorial Part 1](https://www.youtube.com/watch?v=cZzf1FQQFA0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=1) 
+[Rhythm game tutorial Part 2](https://www.youtube.com/watch?v=PMfhS-kEvc0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=2)
+[Rhythm game tutorial Part 3](https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=3)
+[Rhythm game tutorial Part 4](https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=4)
+[Rhythm game tutorial Part 5](https://www.youtube.com/watch?v=Usuh7WUAPbg&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=5)
+[2D LEVEL DESIGN with Tile Palette](https://www.youtube.com/watch?v=vN4H7N_k3eg&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=3)
+[2D SMOOTH CAMERA FOLLOW Tutorial](https://www.youtube.com/watch?v=QfLhSzeZaoA&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=4)
+[2D Player RESPAWN Tutorial](https://www.youtube.com/watch?v=odStG_LfPMQ&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=10)
+[MAIN MENU Quickly! | Unity UI Tutorial ](https://www.youtube.com/watch?v=DX7HyN7oJjE&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=23)
+[2D Player Movement In Unity](https://www.youtube.com/watch?v=K1xZ-rycYY8)
+[How to Import a 2D Character Sprite Sheet and Use in a GameObject in Unity](https://www.youtube.com/watch?v=FXXc0hTWIMs)
+[Idle, Run and Jump Animations - Platformer Unity 2D](https://www.youtube.com/watch?v=Sg_w8hIbp4Y&t=315s)
+[How To Make An Atmospheric 2D Game](https://www.youtube.com/watch?v=7qcKMUioPI0)
+[How To Make An Atmospheric 2D Game (Pt2)](https://www.youtube.com/watch?v=S10eaYrNnYM)
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+
+
+
+I have utilzed ai in assisting me throughout this project. I used Co-Pilot to accelerate the learning curve for complex unity systems. The AI acted as a mentor, assisting me for the Combo system, the Pause State and some visual systems. I have made sure to use Ai as a tool to Strengthen my understanding of Unity and C# code, instead of it being a tool to replace myself.
+
+
+
+
+
+
+
+
 
 
 
 
 # Other
 
-## Authors
+
+## Authors :ledger:
 
 🎨 Artist - Harrison Traue
 💻 Developer - Harrison Traue
@@ -146,12 +169,7 @@ https://www.youtube.com/watch?v=S10eaYrNnYM
 ex. Mr Jones
 ex. [@benpaddlejones](https://github.com/benpaddlejones)
 
-## License
+## License :credit_card:
 
 This project is licensed under the [HARRISON TRAUE] License - see the LICENSE.md file for details
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [Github md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [TempeHS Unity template](https://github.com/TempeHS/TempeHS_Unity_DevContainer)
