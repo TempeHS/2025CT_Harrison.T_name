@@ -61,7 +61,7 @@ While the core aesthetic and structure of my rhythm game was nearly complete. My
 -------------------------    
 ![Gameplay](2025CTT.mp4)
 
-
+<img src="2025CTT.mp4">
 
 
 
@@ -122,20 +122,34 @@ Every 2D element **except** for the smoke cloud and main menu background has bee
 
 
 [Rhythm game tutorial Part 1](https://www.youtube.com/watch?v=cZzf1FQQFA0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=1) 
+
 [Rhythm game tutorial Part 2](https://www.youtube.com/watch?v=PMfhS-kEvc0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=2)
+
 [Rhythm game tutorial Part 3](https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=3)
+
 [Rhythm game tutorial Part 4](https://www.youtube.com/watch?v=dV9rdTlMHxs&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=4)
+
 [Rhythm game tutorial Part 5](https://www.youtube.com/watch?v=Usuh7WUAPbg&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv&index=5)
+
 [2D LEVEL DESIGN with Tile Palette](https://www.youtube.com/watch?v=vN4H7N_k3eg&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=3)
+
 [2D SMOOTH CAMERA FOLLOW Tutorial](https://www.youtube.com/watch?v=QfLhSzeZaoA&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=4)
+
 [2D Player RESPAWN Tutorial](https://www.youtube.com/watch?v=odStG_LfPMQ&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=10)
+
 [MAIN MENU Quickly! | Unity UI Tutorial ](https://www.youtube.com/watch?v=DX7HyN7oJjE&list=PLf6aEENFZ4Fv0ifncKE3T05qrI450U_aD&index=23)
+
 [2D Player Movement In Unity](https://www.youtube.com/watch?v=K1xZ-rycYY8)
 [How to Import a 2D Character Sprite Sheet and Use in a GameObject in Unity](https://www.youtube.com/watch?v=FXXc0hTWIMs)
+
 [Idle, Run and Jump Animations - Platformer Unity 2D](https://www.youtube.com/watch?v=Sg_w8hIbp4Y&t=315s)
+
 [How To Make An Atmospheric 2D Game](https://www.youtube.com/watch?v=7qcKMUioPI0)
+
 [How To Make An Atmospheric 2D Game (Pt2)](https://www.youtube.com/watch?v=S10eaYrNnYM)
+
 []()
+
 []()
 []()
 []()
